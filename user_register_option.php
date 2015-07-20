@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
 <Head><h1>User Registration Options</h1></Head>
 </br>
@@ -73,3 +74,6 @@
 </div>
 </body>
 </html>
+=======
+<Head><h1>User Registration Options</h1></Head>
+>>>>>>> d5e13077639e53e945db685b59fa50ea9c666a0a

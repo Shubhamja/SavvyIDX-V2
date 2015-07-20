@@ -6,7 +6,10 @@ add_menu_page('SavvyIDX Plugin Page', 'SavvyIDX Plugin', 'manage_options', 'Savv
 add_submenu_page('SavvyIDX_Plugin', 'Mortgage Calculator', 'Mortgage Calculator', 'manage_options', 'mortgage_calculator', 'mortgage_calc');
 add_submenu_page('SavvyIDX_Plugin', 'Property Details', 'Property Details', 'manage_options', 'property_details', 'property_detl');
 add_submenu_page('SavvyIDX_Plugin', 'Registration Options', 'Registration Options', 'manage_options', 'registration_options', 'user_register_option');
+<<<<<<< HEAD
 add_submenu_page('SavvyIDX_Plugin', 'User Intraction', 'User Intraction', 'manage_options', 'user_intraction', 'user_interaction_text');
+=======
+>>>>>>> d5e13077639e53e945db685b59fa50ea9c666a0a
 }
 function mortgage_calc()
 {
@@ -119,6 +122,7 @@ if (isset($_POST['submit'])) {
 }
 function user_register_option()
 {
+<<<<<<< HEAD
 if (isset($_POST['submit'])) {
 		if (isset($_POST['force_registration'])) {
          update_option('force_registration', $_POST['force_registration']);
@@ -201,6 +205,24 @@ if (isset($_POST['submit'])) {
 
 
 
+=======
+if (isset($_POST['down_payment'])) {
+        update_option('down_payment', $_POST['down_payment']);
+         update_option('term_year', $_POST['term_year']);
+          update_option('interest_rate', $_POST['interest_rate']);
+          
+        $value1 = $_POST['down_payment'];
+         $value2 = $_POST['term_year'];
+          $value3 = $_POST['interest_rate'];
+    } 
+
+    $value1 = get_option('down_payment','20%');
+    $value2 = get_option('term_year','30');
+    $value3 = get_option('interest_rate','5%');
+    
+    include 'user_register_option.php';
+}
+>>>>>>> d5e13077639e53e945db685b59fa50ea9c666a0a
 function SavvyIDX_Plugin()
 {
 ?>
