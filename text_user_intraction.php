@@ -20,7 +20,7 @@
 </tr>
 <tr>
 <td >Sharing a Listing Popup  Default/Email Text</td>
-<td ><textarea rows="4" cols="50" name="sharing_listing" value="<?php $sharing_listing ?>" class="widefat" required> <?php echo $sharing_listing?></textarea></td>
+<td ><textarea rows="4" cols="50" name="sharing_listing" value="<?php $sharing_listing ?>" class="widefat" > <?php echo $sharing_listing?></textarea></td>
 </tr>
 <tr>
 <td >Notify Me Popup  Default/Email Text</td>
